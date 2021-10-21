@@ -43,8 +43,8 @@ const user = {
   }
 
   let bobby = {
-    user,
-    ...firstName: "bobby"
+    firstName: "bobby",
+    ...user
   }
 
   console.log(bobby)
@@ -54,13 +54,20 @@ breaklines()
 
 const numbers = [1, 2, 3, 4, 5, 6]
 
-numbers.forEach = (number => console.log(number))
+numbers.forEach(number => console.log(number)) 
 
 breaklines()
 breaklines()
 // ------------------------6------------------------//
+
+const modulo = numbers.filter(numbers => numbers % 2 === 0)
+console.log(modulo)
+
 breaklines()
 breaklines()
 // ------------------------7------------------------//
+
+const square = numbers.map(numbers => numbers * numbers)
+console.log(square)
 breaklines()
 breaklines()
